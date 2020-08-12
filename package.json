@@ -1,0 +1,23 @@
+{
+  "name": "data-in-practice",
+  "version": "1.0.0",
+  "description": "Data in practice website project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeyren95/data-in-practice.git"
+  },
+  "author": "Jey-ren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeyren95/data-in-practice/issues"
+  },
+  "homepage": "https://github.com/jeyren95/data-in-practice#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}
