@@ -1,0 +1,226 @@
+body {
+  text-align: center;
+  position: relative;
+  font-family: "Roboto Slab", serif;
+}
+
+h2 {
+  padding-bottom: 3%;
+}
+
+hr {
+  width: 8%;
+  border: solid thin;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/*** Containers ***/
+.container-fluid {
+  padding: 8% 10%;
+}
+
+.container {
+  padding: 3% 2%;
+  margin-top: -8%;
+  z-index: 1;
+  background-color: white;
+  border: solid 3px #fb3569;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*** Navbar ***/
+#my-navbar {
+  background-color: #32312F;
+  border-bottom: solid thin #fb3569;
+}
+
+.active {
+  color: #77a6f7 !important;
+}
+
+.navbar-nav {
+  margin-right: 12%;
+}
+
+.navbar-nav .nav-item {
+  padding: 0 2%;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #77a6f7 !important;
+}
+
+/*** Headers ***/
+.header {
+  padding-bottom: 3%;
+}
+
+/*** Buttons ***/
+.btn-outline-light {
+  border: solid 2px #fb3569;
+  font-weight: bold;
+}
+
+.btn-outline-light:hover {
+  background-color: #77a6f7;
+  border: solid 3px #fb3569;
+}
+
+/*** Introduction section ***/
+#introduction {
+  background-image: url("../images/background-img.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.introduction {
+  color: white;
+  text-align: left;
+  padding: 15% 0 0 5%;
+}
+
+.introduction h1 {
+  font-size: 65px;
+}
+
+.introduction p {
+  font-size: 30px;
+}
+
+.introduction span {
+  border-bottom: solid thick #fb3569;
+}
+
+/*** About section ***/
+#about .container-fluid {
+  background-color: #f8f8f8;
+}
+
+#about img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 8%;
+}
+
+#about .why-data {
+  text-align: left;
+  padding: 5% 0;
+}
+
+#about .role h2 {
+  padding-bottom: 8%;
+}
+
+#about .each-role {
+  margin-bottom: 3%;
+}
+
+#about i {
+  color: #77a6f7;
+  padding-bottom: 5%;
+}
+
+/*** Projects section ***/
+#projects img {
+  width: 90%;
+  height: auto;
+  padding-bottom: 5%;
+
+}
+
+.each-project {
+  margin-bottom: 8%;
+}
+
+.each-project a {
+  text-decoration: none;
+  color: black;
+}
+
+.each-project a:hover {
+  color: #77a6f7;
+}
+
+/*** Team section ***/
+#team {
+  background-color: #f8f8f8;
+}
+
+#team img {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: 3% 0;
+}
+
+#team .card {
+  margin: 3% 0;
+  border-radius: 10px;
+}
+
+/*** Get involved section ***/
+#get-involved .btn-outline-light {
+  color: black;
+}
+
+#get-involved .row {
+  text-align: left;
+}
+
+#get-involved img {
+  margin-bottom: 8%;
+  width: 80%;
+  height: auto;
+}
+
+#get-involved .careers {
+  margin-bottom: 8%;
+}
+
+#get-involved .support-us {
+  margin-bottom: 8%;
+}
+
+/*** Contact section ***/
+#contact {
+  background-color: #444c5c;
+  color: white;
+}
+
+#contact .form {
+  margin: 0.5% 0;
+  width: 40%;
+  outline: none;
+}
+
+/*** Footer section ***/
+#footer {
+  background-color: #32312F;
+  color: white;
+}
+
+#footer .container-fluid {
+  padding: 2% 15% 1%;
+}
+
+.email-phone {
+  text-align: right;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+#footer i {
+  padding: 0 1%;
+  color: #77a6f7;
+}
