@@ -7,7 +7,22 @@ const members = [
   {
     name: "Alex Nabiswa",
     role: "Founder & Executive Director",
-    image: "images/team-members/alex-img.jpg"
+    image: "images/team-members/alex-nabiswa-img.jpg"
+  },
+  {
+    name: "Steven Onyango",
+    role: "Board Member",
+    image: "images/team-members/steven-onyango-img.jpg"
+  },
+  {
+    name: "Stephen Kithisya",
+    role: "Board Member",
+    image: "images/team-members/stephen-kithisya-img.jpg"
+  },
+  {
+    name: "Boniface Makokha",
+    role: "Board Member",
+    image: "images/team-members/boniface-makokha-img.jpg"
   }
 ]
 

@@ -17,6 +17,10 @@ h5 {
   font-weight: bold;
 }
 
+h6 {
+  font-weight: bold;
+}
+
 hr {
   width: 8%;
   border: solid thin;
@@ -315,6 +319,7 @@ p {
 
 #team .card {
   margin: auto;
+  margin-bottom: 5%;
   border-radius: 10px;
   height: auto;
   width: 80%;
