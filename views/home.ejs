@@ -1,10 +1,9 @@
 <%- include("partials/header"); -%>
 
-<body data-spy="scroll" data-target="#my-navbar">
   <section id="introduction">
     <!-- Navbar -->
     <div class="container-fluid">
-      <nav id="my-navbar" class="navbar fixed-top navbar-expand-xl navbar-dark">
+      <nav id="my-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +32,7 @@
       <div class="introduction">
         <h1>DATA IN PRACTICE</h1>
         <p><em>The power of big data in <span>transforming the society</span></em></p>
-        <a href="#about"><button class="btn btn-outline-light" type="button" name="view-more-button">View more here</button></a>
+        <a href="#about"><button class="btn btn-outline-light" type="button">View more here</button></a>
       </div>
 
     </div>
@@ -124,15 +123,15 @@
       </div>
 
       <div class="bios">
-        <h5>We're headquartered in Nairobi, Kenya. A team of multidisciplinary, global talent composed
+        <p>We're headquartered in Nairobi, Kenya. A team of multidisciplinary, global talent composed
             of statisticians, computer scientists, coders, bioinformaticians and community workers.
-        </h5>
+        </p>
 
         <br>
 
         <div class="row">
           <% members.forEach((member) => { %>
-            <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
               <div class="card">
                 <img src=<%=member.image%> alt="alex-img">
                 <div class="card-body">
@@ -162,9 +161,9 @@
             <h2>Careers</h2>
             <p>Think you have what it takes to join our team?</p>
             <p>We are looking for high-performing data scientists, software engineers, computer scientists,
-              statisticians, bioinformaticians, community workers and educators to join us to fulfil our mission!
+              statisticians, bioinformaticians, community workers and educators to join us to fulfil our mission.
             </p>
-            <button class="btn btn-outline-light" type="button" name="button">Apply for a career</button>
+            <a href="/careers"><button class="btn btn-outline-light" type="button" name="button">Apply for a career</button></a>
           </div>
         </div>
 
@@ -176,12 +175,12 @@
             <h2>Support us</h2>
             <div class="support-us">
               <h5>Volunteering opportunities</h5>
-              <p>Data engineers, computer scientists, research scientists, fundraisers, cloud engineers, software engineers are welcomed!</p>
-              <button class="btn btn-outline-light" type="button" name="button">Sign up</button>
+              <p>Data engineers, computer scientists, research scientists, fundraisers, cloud engineers, software engineers are welcomed.</p>
+              <a href="/volunteer"><button class="btn btn-outline-light" type="button" name="button">Sign up</button></a>
             </div>
             <div class="support-us">
               <h5>Donate</h5>
-              <p>We are extremely grateful for any financial support given to us!</p>
+              <p>We appreciate any financial support given to us as we strive to do our best in fulfilling our mission.</p>
               <button class="btn btn-outline-light " type="button" name="button">Donate now</button>
             </div>
           </div>
@@ -199,18 +198,18 @@
 
         <div>
           <p>Have a question for us? Leave a message below!</p>
-          <form action="index.html" method="post">
+          <form class="query-form" action="https://formspree.io/mdowjwja" method="POST">
             <div>
-              <input class="form" type="text" placeholder="Name">
+              <input class="form" type="text" name="Name" placeholder="Name">
             </div>
             <div>
-              <input class="form" type="text" placeholder="Email">
+              <input class="form" type="email" name="Email" placeholder="Email">
             </div>
             <div>
-              <textarea class="form" rows="8" cols="80" placeholder="Your message"></textarea>
+              <textarea class="form" rows="8" cols="80" name="Nessage" placeholder="Your message"></textarea>
             </div>
+            <button class="btn btn-outline-light" type="submit">Submit</button>
           </form>
-          <button class="btn btn-outline-light" type="submit" name="button">Submit</button>
         </div>
 
       </div>

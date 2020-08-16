@@ -1,0 +1,54 @@
+<%- include("partials/header"); -%>
+  <section id="volunteer">
+      <div class="container-fluid">
+        <div class="header">
+          <h1>Volunteer sign-up form</h1>
+          <hr />
+        </div>
+        <form class="careers-form" action="https://formspree.io/mdowjwja" method="POST"/>
+          <div class="form-group">
+              <input class="form-control" type="text" name="First name" placeholder="First name"/>
+          </div>
+          <div class="form-group">
+              <input class="form-control" type="text" name="Last name" placeholder="Last name">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" name="Email" placeholder="Email"/>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="Mobile number" placeholder="Mobile number"/>
+          </div>
+          <div class="form-group">
+            <select class="form-control" name="Volunteer role">
+              <option selected>
+                  What role are you signing up for?
+              </option>
+              <option>Data engineer</option>
+              <option>Software engineer</option>
+              <option>Computer scientist</option>
+              <option>Research scientist</option>
+              <option>Fundraiser</option>
+              <option>Cloud engineer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="Education history" rows="8" cols="80" placeholder="Education history"></textarea>
+          </div>
+          <div>
+            <textarea class="form-control" name="Work experience" rows="8" cols="80" placeholder="Work experience"></textarea>
+          </div>
+          <div class="form-group attachment">
+            <label>Attach cover letter</label>
+            <input id="cover-letter" type="file" name="Cover letter" />
+          </div>
+          <div class="form-group attachment">
+            <label>Attach CV</label>
+            <input type="file" name="CV" />
+          </div>
+          <button class="btn btn-outline-light" type="submit">Submit</button>
+        </form>
+      </div>
+  </section>
+
+
+<%- include("partials/footer"); -%>

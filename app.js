@@ -25,7 +25,7 @@ const projects = [
   {
     projectName: "Fighting Hunger",
     articleLink: "",
-    imageLink: "images/projects/education-project.jpg"
+    imageLink: "images/projects/hunger-project.jpg"
   }
 ]
 
@@ -39,6 +39,13 @@ app.get("/", function(req, res) {
   });
 });
 
+app.get("/careers", function(req, res) {
+  res.render("careers");
+});
+
+app.get("/volunteer", function(req, res) {
+  res.render("volunteer");
+});
 
 
 app.listen(3000, () => {
