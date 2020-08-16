@@ -23,6 +23,11 @@ const members = [
     name: "Boniface Makokha",
     role: "Board Member",
     image: "images/team-members/boniface-makokha-img.jpg"
+  },
+  {
+    name: "Dr Moses Wakenya",
+    role: "Board Member",
+    image: "images/team-members/moses-wakenya-img.jpg"
   }
 ]
 
