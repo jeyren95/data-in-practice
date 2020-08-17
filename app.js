@@ -29,7 +29,7 @@ const members = [
     role: "Board Member",
     image: "images/team-members/moses-wakenya-img.jpg"
   }
-]
+];
 
 const projects = [
   {
@@ -47,7 +47,22 @@ const projects = [
     articleLink: "",
     imageLink: "images/projects/hunger-project.jpg"
   }
-]
+];
+
+const volunteerOpportunities = [
+  {
+    roleTitle: "Data Scientist",
+    roleType: "Full-time, Contract",
+    roleDeadline: "-",
+    roleLink: "data-scientist"
+  },
+  {
+    roleTitle: "Cloud/Data Architect",
+    roleType: "Full-time, Contract",
+    roleDeadline: "-",
+    roleLink: "cloud-architect"
+  }
+];
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -59,14 +74,29 @@ app.get("/", function(req, res) {
   });
 });
 
-app.get("/careers", function(req, res) {
-  res.render("careers");
+app.get("/careers-form", function(req, res) {
+  res.render("careers-form");
 });
 
-app.get("/volunteer", function(req, res) {
-  res.render("volunteer");
+app.get("/volunteer-opportunities", function(req, res) {
+  res.render("volunteer-opportunities", {
+    volunteerOpportunities: volunteerOpportunities
+  });
 });
 
+app.get("/volunteer-opportunities/data-scientist", function(req, res) {
+  res.render("volunteer-data-scientist");
+});
+
+app.get("/volunteer-opportunities/cloud-architect", function(req, res) {
+  res.render("volunteer-cloud-architect");
+});
+
+app.get("/volunteer-form", function(req, res) {
+  res.render("volunteer-form", {
+    volunteerOpportunities: volunteerOpportunities
+  });
+});
 
 app.listen(3000, () => {
   console.log("Server successfully running on port 3000")

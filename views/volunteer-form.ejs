@@ -1,35 +1,31 @@
 <%- include("partials/header"); -%>
-  <section id="careers">
+  <section id="volunteer-form">
       <div class="container-fluid">
-        <div class="header">
-          <h1>Career application form</h1>
+        <div class="heading">
+          <h1>Volunteer sign-up form</h1>
           <hr />
         </div>
-        <form class="careers-form" action="https://formspree.io/mdowjpno" method="POST">
+        <form class="careers-form" action="https://formspree.io/mdowjpno" method="POST"/>
           <div class="form-group">
-              <input class="form-control" type="text" name="First name" placeholder="First name">
+              <input class="form-control" type="text" name="First name" placeholder="First name"/>
           </div>
           <div class="form-group">
               <input class="form-control" type="text" name="Last name" placeholder="Last name">
           </div>
           <div class="form-group">
-            <input class="form-control" type="email" name="Email" placeholder="Email">
+            <input class="form-control" type="email" name="Email" placeholder="Email"/>
           </div>
           <div class="form-group">
-            <input class="form-control" type="text" name="Mobile number" placeholder="Mobile number">
+            <input class="form-control" type="text" name="Mobile number" placeholder="Mobile number"/>
           </div>
           <div class="form-group">
-            <select class="form-control" name="Career role">
+            <select class="form-control" name="Volunteer role">
               <option selected>
-                  What role are you applying for?
+                What volunteer role are you signing up for?
               </option>
-              <option>Data scientist</option>
-              <option>Software engineer</option>
-              <option>Computer scientist</option>
-              <option>Statistician</option>
-              <option>Bioinformatician</option>
-              <option>Community worker</option>
-              <option>Educator</option>
+              <% volunteerOpportunities.forEach((opportunity) => { %>
+                <option><%=opportunity.roleTitle %></option>
+              <% }); %>
             </select>
           </div>
           <div class="form-group">
@@ -40,7 +36,7 @@
           </div>
           <div class="form-group attachment">
             <label>Attach cover letter</label>
-            <input type="file" name="Cover letter" />
+            <input id="cover-letter" type="file" name="Cover letter" />
           </div>
           <div class="form-group attachment">
             <label>Attach CV</label>

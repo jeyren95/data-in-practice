@@ -1,33 +1,35 @@
 <%- include("partials/header"); -%>
+  <header>
+  <!-- Navbar -->
+    <nav id="my-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#projects">WORK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#team">TEAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#get-involved">GET INVOLVED</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
   <section id="introduction">
-    <!-- Navbar -->
     <div class="container-fluid">
-      <nav id="my-navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#projects">WORK</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#team">TEAM</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#get-involved">GET INVOLVED</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <!-- Introduction section -->
       <div class="introduction">
         <h1>DATA IN PRACTICE</h1>
@@ -41,7 +43,7 @@
   <!-- About section -->
   <section id="about">
     <div class="container-fluid">
-      <div class="header">
+      <div class="heading">
         <h1>WHAT WE DO</h1>
         <hr>
       </div>
@@ -96,7 +98,7 @@
   <!-- Projects section -->
   <section id="projects">
     <div class="container-fluid">
-      <div class="header">
+      <div class="heading">
         <h1>OUR WORK</h1>
         <hr>
       </div>
@@ -117,7 +119,7 @@
   <!-- Team section -->
   <section id="team">
     <div class="container-fluid">
-      <div class="header">
+      <div class="heading">
         <h1>MEET THE TEAM</h1>
         <hr>
       </div>
@@ -148,7 +150,7 @@
     <!-- Get involved section -->
     <section id="get-involved">
       <div class="container-fluid">
-        <div class="header">
+        <div class="heading">
           <h1>GET INVOLVED</h1>
           <hr>
         </div>
@@ -163,7 +165,7 @@
             <p>We are looking for high-performing data scientists, software engineers, computer scientists,
               statisticians, bioinformaticians, community workers and educators to join us to fulfil our mission.
             </p>
-            <a href="/careers"><button class="btn btn-outline-light" type="button" name="button">Apply for a career</button></a>
+            <a href="/careers-form"><button class="btn btn-outline-light" type="button" name="button">Apply for a career</button></a>
           </div>
         </div>
 
@@ -176,7 +178,7 @@
             <div class="support-us">
               <h5>Volunteering opportunities</h5>
               <p>Data engineers, computer scientists, research scientists, fundraisers, cloud engineers, software engineers are welcomed.</p>
-              <a href="/volunteer"><button class="btn btn-outline-light" type="button" name="button">Sign up</button></a>
+              <a href="/volunteer-opportunities"><button class="btn btn-outline-light" type="button" name="button">Sign up</button></a>
             </div>
             <div class="support-us">
               <h5>Donate</h5>
@@ -191,7 +193,7 @@
     <!-- Contact section -->
     <section id="contact">
       <div class="container-fluid">
-        <div class="header">
+        <div class="heading">
           <h1>CONTACT US</h1>
           <hr>
         </div>

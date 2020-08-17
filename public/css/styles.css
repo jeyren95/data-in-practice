@@ -157,7 +157,7 @@ p {
 }
 
 /*** Headers ***/
-.header {
+.heading {
   padding-bottom: 3%;
 }
 
@@ -474,24 +474,151 @@ p {
   }
 }
 
-/*** Careers and volunteer form ***/
-#careers, #volunteer {
-  color: white;
-  background-color: #444c5c;
+/*** Volunteer opportunities page ***/
+#volunteer-opportunities {
+  background-color: #f8f8f8;
+  height: 100vh;
 }
 
-#careers .container-fluid, #volunteer .container-fluid {
+#volunteer-opportunities .container-fluid {
   padding: 5% 10%;
 }
 
-#careers .form-control, #volunteer .form-control {
+#volunteer-opportunities .role-headings {
+  margin-bottom: 2%;
+}
+
+#volunteer-opportunities .role-details {
+  background-color: white;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #volunteer-opportunities .container-fluid {
+    padding: 12% 5%;
+  }
+  #volunteer-opportunities .role-headings {
+    margin-bottom: 6%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #volunteer-opportunities .container-fluid {
+    padding: 10% 10%;
+  }
+  #volunteer-opportunities .role-headings {
+    margin-bottom: 4%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px), (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  #volunteer-opportunities .container-fluid {
+    padding: 10% 10%;
+  }
+  #volunteer-opportunities .role-headings {
+    margin-bottom: 2%;
+  }
+}
+
+/*** Volunteer role description pages ***/
+#volunteer-role-description {
+  background-color: #f8f8f8;
+  text-align: left;
+}
+
+#volunteer-role-description .container-fluid {
+  padding: 5% 10%;
+}
+
+#volunteer-role-description h2 {
+  text-decoration: underline;
+}
+
+#volunteer-role-description li {
+  margin-bottom: 1%;
+}
+
+#volunteer-role-description .role-description, #volunteer-role-description .role-duties-and-responsibilities, #volunteer-role-description .role-qualifications {
+  margin-bottom: 3%;
+}
+
+#volunteer-role-description .apply-button {
+  text-align: center;
+}
+
+#volunteer-role-description .apply-button .btn-outline-light {
+  color: black;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #volunteer-role-description .container-fluid {
+    padding: 12% 10%;
+  }
+  #volunteer-role-description li {
+    margin-bottom: 3%;
+    font-size: 14px;
+  }
+  #volunteer-role-description .role-description, #volunteer-role-description .role-duties-and-responsibilities, #volunteer-role-description .role-qualifications {
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #volunteer-role-description .container-fluid {
+    padding: 10% 10%;
+  }
+  #volunteer-role-description li {
+    margin-bottom: 2%;
+    font-size: 16px;
+  }
+  #volunteer-role-description .role-description, #volunteer-role-description .role-duties-and-responsibilities, #volunteer-role-description .role-qualifications {
+    margin-bottom: 8%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  #volunteer-role-description .container-fluid {
+    padding: 10% 10%;
+  }
+  #volunteer-role-description li {
+    margin-bottom: 1%;
+    font-size: 14px;
+  }
+  #volunteer-role-description .role-description, #volunteer-role-description .role-duties-and-responsibilities, #volunteer-role-description .role-qualifications {
+    margin-bottom: 6%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #volunteer-role-description .container-fluid {
+    padding: 10% 10%;
+  }
+  #volunteer-role-description li {
+    margin-bottom: 1%;
+    font-size: 16px;
+  }
+  #volunteer-role-description .role-description, #volunteer-role-description .role-duties-and-responsibilities, #volunteer-role-description .role-qualifications {
+    margin-bottom: 6%;
+  }
+}
+
+/*** Careers and volunteer form ***/
+#careers-form, #volunteer-form {
+  background-color: #f8f8f8;
+}
+
+#careers-form .container-fluid, #volunteer-form .container-fluid {
+  padding: 5% 10%;
+}
+
+#careers-form .form-control, #volunteer-form .form-control {
   width: 40%;
   margin: auto;
   font-size: 15px;
 }
 
-#careers .btn-outline-light, #volunteer .btn-outline-light {
+#careers-form .btn-outline-light, #volunteer-form .btn-outline-light {
   margin-top: 1%;
+  color: black;
 }
 
 .attachment {
@@ -503,14 +630,14 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  #careers .container-fluid, #volunteer .container-fluid {
+  #careers-form .container-fluid, #volunteer-form .container-fluid {
     padding: 12% 10%;
   }
-  #careers .form-control, #volunteer .form-control {
+  #careers-form .form-control, #volunteer-form .form-control {
     width: 100%;
     font-size: 12px;
   }
-  #careers .btn-outline-light, #volunteer .btn-outline-light {
+  #careers-form .btn-outline-light, #volunteer-form .btn-outline-light {
     margin-top: 8%;
   }
   .attachment {
@@ -522,14 +649,14 @@ p {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  #careers .container-fluid, #volunteer .container-fluid {
+  #careers-form .container-fluid, #volunteer-form .container-fluid {
     padding: 10% 10%;
   }
-  #careers .form-control, #volunteer .form-control {
+  #careers-form .form-control, #volunteer-form .form-control {
     width: 80%;
     font-size: 14px;
   }
-  #careers .btn-outline-light, #volunteer .btn-outline-light {
+  #careers-form .btn-outline-light, #volunteer-form .btn-outline-light {
     margin-top: 4%;
   }
   .attachment {
@@ -541,11 +668,11 @@ p {
 }
 
 @media (min-width: 481px) and (max-width: 768px) and (orientation: landscape){
-  #careers .form-control, #volunteer .form-control {
+  #careers-form .form-control, #volunteer-form .form-control {
     width: 80%;
     font-size: 12px;
   }
-  #careers .btn-outline-light, #volunteer .btn-outline-light {
+  #careers-form .btn-outline-light, #volunteer-form .btn-outline-light {
     margin-top: 1%;
   }
   .attachment label, .attachment input {
@@ -555,10 +682,10 @@ p {
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  #careers .container-fluid, #volunteer .container-fluid {
+  #careers-form .container-fluid, #volunteer-form .container-fluid {
     padding: 10% 10%;
   }
-  #careers .form-control, #volunteer .form-control {
+  #careers-form .form-control, #volunteer-form .form-control {
     width: 60%;
     font-size: 14px;
   }

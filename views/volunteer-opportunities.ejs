@@ -1,0 +1,46 @@
+<%- include("partials/header"); -%>
+  <section id="volunteer-opportunities">
+    <div class="container-fluid">
+      <div class="heading">
+        <h1>Volunteer opportunities</h1>
+        <hr />
+      </div>
+      <div class="volunteer-roles">
+        <div class="row role-headings">
+          <div class="col">
+            <h5>Role Title</h5>
+          </div>
+          <div class="col">
+            <h5>Role Type</h5>
+          </div>
+          <div class="col">
+            <h5>Deadline</h5>
+          </div>
+          <div class="col">
+            <h5></h5>
+          </div>
+        </div>
+
+        <% volunteerOpportunities.forEach((opportunity) => { %>
+          <div class="row role-details">
+            <div class="col">
+              <p><%=opportunity.roleTitle %></p>
+            </div>
+            <div class="col">
+              <p><%=opportunity.roleType %></p>
+            </div>
+            <div class="col">
+              <p><%=opportunity.roleDeadline %></p>
+            </div>
+            <div class="col">
+              <a href="/volunteer-opportunities/<%=opportunity.roleLink %>"><p>Apply</p></a>
+            </div>
+          </div>
+        <% }); %>
+
+      </div>
+    </div>
+
+  </section>
+
+<%- include("partials/footer"); -%>
