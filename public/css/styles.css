@@ -326,16 +326,25 @@ p {
 }
 
 /*** Modal ***/
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-  overflow: auto;
-  background-color: red;
+#team .modal .modal-header, #team .modal .modal-footer {
+  background-color: #f8f8f8 ;
 }
 
+#team .modal .modal-body {
+  text-align: left;
+}
+
+#team .modal .modal-body h6 {
+  text-decoration: underline;
+}
+
+#team .modal-body .member-about, #team .modal-body .member-background {
+  margin-bottom: 5%;
+}
+
+#team .modal .btn-outline-light {
+  color: black;
+}
 
 /*** Get involved section ***/
 #get-involved .btn-outline-light {

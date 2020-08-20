@@ -135,10 +135,36 @@
         <% members.forEach((member) => { %>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
           <div class="card">
-            <img src=<%=member.image%> alt="team-member-img">
+            <img data-toggle="modal" data-target="#myModal-<%=member.id %>" src=<%=member.image%> alt="team-member-img">
             <div class="card-body">
               <h6 class="card-title"><%=member.name%></h6>
               <p class="card-text"><%=member.role%></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="myModal-<%=member.id %>" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLongTitle"><%=member.name %></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="member-about">
+                  <h6>About</h6>
+                  <p><%=member.about %></p>
+                </div>
+                <div class="member-background">
+                  <h6>Background</h6>
+                  <p><%=member.background %></p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
@@ -147,8 +173,11 @@
 
 
 
+
     </div>
+
   </div>
+
 </section>
 
 <!-- Get involved section -->
