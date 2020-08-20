@@ -6,7 +6,7 @@ const app = express();
 const members = [
   {
     name: "Alex Nabiswa",
-    role: "Founder & Executive Director",
+    role: "Chief Executive Officer",
     image: "images/team-members/alex-nabiswa-img.jpg"
   },
   {
