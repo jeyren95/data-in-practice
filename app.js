@@ -65,17 +65,17 @@ const members = [
 const projects = [
   {
     projectName: "COVID-19 Response",
-    articleLink: "",
+    projectLink: "https://www.bing.com/covid/local/kenya",
     imageLink: "images/projects/covid-project.jpg"
   },
   {
     projectName: "Big Data In Education",
-    articleLink: "",
+    projectLink: "",
     imageLink: "images/projects/education-project.jpg"
   },
   {
     projectName: "Fighting Hunger",
-    articleLink: "",
+    projectLink: "",
     imageLink: "images/projects/hunger-project.jpg"
   }
 ];

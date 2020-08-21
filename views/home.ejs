@@ -33,7 +33,7 @@
     <!-- Introduction section -->
     <div class="introduction">
       <h1>DATA IN PRACTICE</h1>
-      <p><em>The power of big data in <span>transforming the society</span></em></p>
+      <p><em>The power of big data & AI in <span>transforming the society</span></em></p>
       <a href="#about"><button class="btn btn-outline-light" type="button">View more here</button></a>
     </div>
 
@@ -107,7 +107,7 @@
       <% projects.forEach((project) => { %>
       <div class="col-xl-4 col-lg-4 each-project">
         <a href="#">
-          <img src=<%=project.imageLink%> alt="project-img">
+          <a href=<%=project.projectLink %> target="_blank"><img src=<%=project.imageLink%> alt="project-img"></a>
           <h5><%=project.projectName%></h5>
         </a>
       </div>
