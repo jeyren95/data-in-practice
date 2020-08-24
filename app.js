@@ -129,6 +129,10 @@ app.get("/volunteer-form", function(req, res) {
   });
 });
 
+app.get("/sitemap.xml", function(req, res) {
+  res.sendFile(__dirname + "/sitemap.xml");
+});
+
 app.listen(3000, () => {
   console.log("Server successfully running on port 3000")
 });
