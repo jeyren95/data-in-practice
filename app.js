@@ -3,7 +3,7 @@ const ejs = require("ejs");
 
 const app = express();
 
-const members = [
+const boardMembers = [
   {
     id: 1,
     name: "Alex Nabiswa",
@@ -62,24 +62,6 @@ const members = [
   }
 ];
 
-const projects = [
-  {
-    projectName: "COVID-19 Response",
-    projectLink: "https://www.bing.com/covid/local/kenya",
-    imageLink: "images/projects/covid-project.jpg"
-  },
-  {
-    projectName: "Big Data In Education",
-    projectLink: "",
-    imageLink: "images/projects/education-project.jpg"
-  },
-  {
-    projectName: "Fighting Hunger",
-    projectLink: "",
-    imageLink: "images/projects/hunger-project.jpg"
-  }
-];
-
 const volunteerOpportunities = [
   {
     roleTitle: "Data Scientist",
@@ -99,9 +81,12 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", function(req, res) {
-  res.render("home", {
-    projects: projects,
-    members: members
+  res.render("home");
+});
+
+app.get("/team", function(req, res) {
+  res.render("team", {
+    boardMembers: boardMembers
   });
 });
 

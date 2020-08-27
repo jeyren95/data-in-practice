@@ -1,7 +1,7 @@
 body {
   text-align: center;
   position: relative;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -22,7 +22,7 @@ h6 {
 }
 
 hr {
-  width: 8%;
+  width: 5%;
   border: solid thin;
 }
 
@@ -86,22 +86,24 @@ p {
 
 /*** Containers ***/
 .container-fluid {
-  padding: 8% 10%;
+  padding: 6% 18%;
 }
 
 .container {
-  padding: 3% 2%;
+  border: solid #ff9234;
+  border-radius: 10px;
   margin-top: -8%;
+  padding: 3% 3%;
   z-index: 1;
   background-color: white;
-  border: solid 3px #fb3569;
-  border-radius: 10px;
-  text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .container-fluid {
     padding: 14% 10%;
+  }
+  .container {
+    padding: 10% 3%;
   }
 }
 
@@ -109,16 +111,18 @@ p {
   .container-fluid {
     padding: 12% 10%;
   }
+  .container {
+    padding: 7% 3%;
+  }
 }
 
 /*** Navbar ***/
 #my-navbar {
   background-color: #32312F;
-  border-bottom: solid thin #fb3569;
 }
 
 .active {
-  color: #77a6f7 !important;
+  border-bottom: solid thin #ff9234;
 }
 
 .navbar-nav {
@@ -135,12 +139,16 @@ p {
 }
 
 .navbar-nav .nav-item a:hover {
-  color: #77a6f7 !important;
+ color: white !important;
+ border-bottom: solid thin #ff9234;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .navbar-nav .nav-item .nav-link {
     font-size: 14px;
+  }
+  .active {
+    border-bottom: none;
   }
 }
 
@@ -163,27 +171,28 @@ p {
 
 /*** Buttons ***/
 .btn-outline-light {
-  border: solid 2px #fb3569;
+  border: solid 2px #ff9234;
   font-weight: bold;
 }
 
 .btn-outline-light:hover {
-  background-color: #77a6f7;
-  border: solid 3px #fb3569;
+  background-color: #1cabe2;
+  border: solid 3px #ff9234;
+  color: white;
 }
 
 /*** Introduction section ***/
 #introduction {
-  background-image: url("../images/background-img.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
 .introduction {
+  padding-top: 15%;
   color: white;
   text-align: left;
-  padding: 12% 0 0 3%;
 }
 
 .introduction h1 {
@@ -192,10 +201,11 @@ p {
 
 .introduction p {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .introduction span {
-  border-bottom: solid thick #fb3569;
+  border-bottom: solid thick #ff9234;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -253,102 +263,58 @@ p {
 /*** About section ***/
 #about .container-fluid {
   background-color: #f8f8f8;
+  padding: 6% 18% 15%;
 }
 
-#about img {
-  width: 80%;
-  height: auto;
-  margin-bottom: 8%;
+#about .who-we-are p {
+  font-size: 18px;
 }
 
-#about .why-data {
-  text-align: left;
-  padding: 5% 0;
-}
-
-#about .role h2 {
-  padding-bottom: 8%;
-}
-
-#about .each-role {
-  margin-bottom: 3%;
-}
-
-#about i {
-  color: #77a6f7;
-  padding-bottom: 5%;
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-  #about .why-data {
-    text-align: center;
+@media (min-width: 320px) and (max-width: 480px) {
+  #about .who-we-are p {
+    font-size: 14px;
+  }
+  #about .container-fluid {
+    padding: 14% 10% 25%;
   }
 }
 
-/*** Projects section ***/
-#projects img {
-  width: 90%;
-  height: auto;
-  padding-bottom: 5%;
+@media (min-width: 481px) and (max-width: 1024px) {
+  #about .who-we-are p {
+    font-size: 16px;
+  }
+  #about .container-fluid {
+    padding: 12% 10% 20%;
+  }
 }
 
-.each-project {
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  #about .who-we-are p {
+    font-size: 15px;
+  }
+}
+
+/***Work section ***/
+#work .work-descriptions .each-description {
   margin-bottom: 8%;
 }
 
-.each-project a {
-  text-decoration: none;
-  color: black;
+#work .work-descriptions h5 {
+  padding-bottom: 2%;
 }
 
-.each-project a:hover {
-  color: #77a6f7;
-}
-
-/*** Team section ***/
-#team {
-  background-color: #f8f8f8;
-}
-
-#team img {
-  width: 50%;
-  height: auto;
-  margin: auto;
-  padding: 3% 0;
-}
-
-#team .card {
-  margin: auto;
-  margin-bottom: 5%;
-  border-radius: 10px;
-  height: auto;
-  width: 80%;
-}
-
-/*** Modal ***/
-#team .modal .modal-header, #team .modal .modal-footer {
-  background-color: #f8f8f8 ;
-}
-
-#team .modal .modal-body {
-  text-align: left;
-}
-
-#team .modal .modal-body h6 {
-  text-decoration: underline;
-}
-
-#team .modal-body .member-about, #team .modal-body .member-background {
-  margin-bottom: 5%;
-}
-
-#team .modal .btn-outline-light {
-  color: black;
+#work .work-descriptions .fas {
+  color: #1cabe2;
+  padding-bottom: 8%;
 }
 
 /*** Get involved section ***/
 #get-involved .btn-outline-light {
   color: black;
+}
+
+#get-involved .btn-outline-light:hover {
+  color: white;
 }
 
 #get-involved .row {
@@ -443,7 +409,7 @@ p {
 
 #footer i {
   padding: 0 1%;
-  color: #77a6f7;
+  color: #1cabe2;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -494,6 +460,83 @@ p {
   }
 }
 
+/*** Team page ***/
+#team {
+  background-color: #f8f8f8;
+}
+
+#team h4 {
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 6% 0 3% 0;
+}
+
+#team img {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: 3% 0;
+}
+
+#team .card {
+  margin: auto;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  height: auto;
+  width: 80%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #team h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #team h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  #team h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #team h4 {
+    font-size: 22px;
+    text-align: left;
+  }
+}
+
+/*** Modal ***/
+#team .modal .modal-header, #team .modal .modal-footer {
+  background-color: #f8f8f8 ;
+}
+
+#team .modal .modal-body {
+  text-align: left;
+}
+
+#team .modal .modal-body h6 {
+  text-decoration: underline;
+}
+
+#team .modal-body .member-about, #team .modal-body .member-background {
+  margin-bottom: 5%;
+}
+
+#team .modal .btn-outline-light {
+  color: black;
+}
+
+
 /*** Volunteer opportunities page ***/
 #volunteer-opportunities {
   background-color: #f8f8f8;
@@ -501,7 +544,7 @@ p {
 }
 
 #volunteer-opportunities .container-fluid {
-  padding: 5% 10%;
+  padding: 6% 18%;
 }
 
 #volunteer-opportunities .role-headings {
@@ -546,7 +589,7 @@ p {
 }
 
 #volunteer-role-description .container-fluid {
-  padding: 5% 10%;
+  padding: 6% 18%;
 }
 
 #volunteer-role-description h2 {

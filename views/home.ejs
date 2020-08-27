@@ -9,19 +9,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-nowrap" href="#about">ABOUT</a>
+          <a class="nav-link text-nowrap" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nowrap" href="#projects">WORK</a>
+          <a class="nav-link text-nowrap" href="/team">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nowrap" href="#team">TEAM</a>
+          <a class="nav-link text-nowrap" href="#get-involved">Get involved</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nowrap" href="#get-involved">GET INVOLVED</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-nowrap" href="#contact">CONTACT</a>
+          <a class="nav-link text-nowrap" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -32,7 +29,7 @@
   <div class="container-fluid">
     <!-- Introduction section -->
     <div class="introduction">
-      <h1>DATA IN PRACTICE</h1>
+      <h1>Data In Practice</h1>
       <p><em>The power of big data & AI in <span>transforming the society</span></em></p>
       <a href="#about"><button class="btn btn-outline-light" type="button">View more here</button></a>
     </div>
@@ -44,147 +41,82 @@
 <section id="about">
   <div class="container-fluid">
     <div class="heading">
-      <h1>WHAT WE DO</h1>
+      <h1>Who we are</h1>
       <hr>
     </div>
 
-    <div class="why-data">
+    <div class="who-we-are">
+      <p>Data In Practice is a not-for-profit organization harnessing the power of big data analytics and Artificial Intelligence (AI)
+        to solve development issues facing Africa. We use our expertise to help our partner organizations to collect, analyze, and
+        interpret data to drive problem solving.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Work section -->
+<section id="work">
+  <div class="container">
+    <div class="heading">
+      <h1>What we do</h1>
+      <hr>
+    </div>
+
+    <div class="work-descriptions">
       <div class="row">
-        <div class="col-xl-6 col-lg-6">
-          <img src="images/kids-img.jpg" alt="kids-img">
-        </div>
-        <div class="col-xl-6 col-lg-6">
-          <h2>Why data?</h2>
-          <p>The digital age has brought about vast amount of data that can be mined, analyzed, understood and utilized to transform our
-            society. The power of big data analytics can be used to formulate government policies, fight climate change, hunger and diseases and
-            to improve student performance in schools as well as boost profits of businesses. However, most organizations in Africa have yet
-            to tap the benefits that emanate from this data revolution.
+        <div class="col-md-4 each-description">
+          <i class="fas fa-compass fa-6x"></i>
+          <h5>Policymaking</h5>
+          <p>We help organizations in both public and private sectors to make better, quicker, and more efficient decisions based on evidence
+            and insight.
           </p>
         </div>
+        <div class="col-md-4 each-description">
+          <i class="fas fa-hands-helping fa-6x"></i>
+          <h5>Consultancy</h5>
+          <p>We bring in our data science capability to collaborate with organizations on cutting-edge analytics to maximize social
+            and business impact.
+          </p>
+        </div>
+        <div class="col-md-4 each-description">
+          <i class="fas fa-users-cog fa-6x"></i>
+          <h5>Skills development</h5>
+          <p>We aspire to build a massive pool of data scientists through short-term trainings, workshops, fellowships and scholarships.</p>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="container role">
-    <h2>Harnessing the power of data analytics</h2>
-    <div class="row">
-      <div class="each-role col-xl-4 col-lg-4 col-md-4">
-        <i class="fas fa-compass fa-5x"></i>
-        <p>We utilize big data analytics to guide the government in policy implementation</p>
-      </div>
-      <div class="each-role col-xl-4 col-lg-4 col-md-4">
-        <i class="far fa-chart-bar fa-5x"></i>
-        <p>We conduct research to create new data analytical methods and discover new knowledge</p>
-      </div>
-      <div class="each-role col-xl-4 col-lg-4 col-md-4">
-        <i class="fas fa-cloud-upload-alt fa-5x"></i>
-        <p>We promote cloud-based big data storage and analytics</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="each-role col-xl-6 col-lg-6 col-md-6">
-        <i class="fas fa-hands-helping fa-5x"></i>
-        <p>We educate teachers, students and professionals to help them incorporate data analytics into their current skillset</p>
-      </div>
-      <div class="each-role col-xl-6 col-lg-6 col-md-6">
-        <i class="fas fa-people-carry fa-5x"></i>
-        <p>We collaborate with organizations to provide solutions for their pressing business needs</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Projects section -->
-<section id="projects">
-  <div class="container-fluid">
-    <div class="heading">
-      <h1>OUR WORK</h1>
-      <hr>
-    </div>
-
-    <div class="row">
-      <% projects.forEach((project) => { %>
-      <div class="col-xl-4 col-lg-4 each-project">
-        <a href=<%=project.projectLink %> target="_blank">
-          <img src=<%=project.imageLink%> alt="project-img">
-          <h5><%=project.projectName%></h5>
-        </a>
-      </div>
-      <% }); %>
-    </div>
-  </div>
-</section>
-
-<!-- Team section -->
-<section id="team">
-  <div class="container-fluid">
-    <div class="heading">
-      <h1>MEET THE TEAM</h1>
-      <hr>
-    </div>
-
-    <div class="bios">
-      <p>We're headquartered in Nairobi, Kenya. A team of multidisciplinary, global talent composed
-        of statisticians, computer scientists, coders, bioinformaticians and community workers.
-      </p>
-
-      <br>
 
       <div class="row">
-        <% members.forEach((member) => { %>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <img data-toggle="modal" data-target="#myModal-<%=member.id %>" src=<%=member.image%> alt="team-member-img">
-            <div class="card-body">
-              <h6 class="card-title"><%=member.name%></h6>
-              <p class="card-text"><%=member.role%></p>
-            </div>
-          </div>
+
+        <div class="col-md-6 each-description">
+          <i class="fas fa-people-carry fa-6x"></i>
+          <h5>Research</h5>
+          <p>We collaborate with universities and industries to develop technologies that will improve our world. Our focus is on agriculture,
+              healthcare, climate change, social networks, education, business and urban planning. We also jointly look for funding to realize
+              the research projects.
+          </p>
+        </div>
+        <div class="col-md-6 each-description">
+          <i class="fas fa-cloud-upload-alt fa-6x"></i>
+          <h5>Awareness</h5>
+          <p>We promote cloud-based big data analytics to accelerate adoption by individuals, businesses, governments, learning
+              and research institutions.
+          </p>
         </div>
 
-        <div class="modal" id="myModal-<%=member.id %>" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalLongTitle"><%=member.name %></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="member-about">
-                  <h6>About</h6>
-                  <p><%=member.about %></p>
-                </div>
-                <div class="member-background">
-                  <h6>Background</h6>
-                  <p><%=member.background %></p>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <% }); %>
       </div>
-
-
-
-
     </div>
 
-  </div>
 
+  </div>
 </section>
 
 <!-- Get involved section -->
 <section id="get-involved">
   <div class="container-fluid">
     <div class="heading">
-      <h1>GET INVOLVED</h1>
+      <h1>Get involved</h1>
       <hr>
     </div>
 
@@ -227,7 +159,7 @@
 <section id="contact">
   <div class="container-fluid">
     <div class="heading">
-      <h1>CONTACT US</h1>
+      <h1>Contact</h1>
       <hr>
     </div>
 

@@ -1,0 +1,68 @@
+<%- include("partials/header") -%>
+<%- include("partials/secondary-navbar") -%>
+<!-- Team section -->
+<section id="team">
+  <div class="container-fluid">
+    <div class="heading">
+      <h1>MEET THE TEAM</h1>
+      <hr>
+    </div>
+
+    <div class="team-introduction">
+      <p>We are a team of data scientists, computer scientists, software engineers, statisticians and community workers
+        guided by a professional board and a technical advisory team.
+      </p>
+    </div>
+
+    <div class="board-members">
+      <h4>Board members</h4>
+      <div class="row">
+        <% boardMembers.forEach((boardMember) => { %>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+          <div class="card">
+            <img data-toggle="modal" data-target="#myModal-<%=boardMember.id %>" src=<%=boardMember.image%> alt="board-member-img">
+            <div class="card-body">
+              <h6 class="card-title"><%=boardMember.name%></h6>
+              <p class="card-text"><%=boardMember.role%></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="myModal-<%=boardMember.id %>" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLongTitle"><%=boardMember.name %></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="board-member-about">
+                  <h6>About</h6>
+                  <p><%=boardMember.about %></p>
+                </div>
+                <div class="board-member-background">
+                  <h6>Background</h6>
+                  <p><%=boardMember.background %></p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+</section>
+
+
+<%- include("partials/footer") -%>
